@@ -64,6 +64,10 @@ class Vector3 {
         return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
     }
 
+    lengthSquared() {
+        return this.x * this.x + this.y * this.y + this.z * this.z;
+    }
+
     scale(f) {
         this.x *= f;
         this.y *= f;
@@ -92,6 +96,10 @@ class Vector3 {
     distanceTo(other){
         if(!other) throw new Exception("distanceTo requires a valid Vector3 object as a parameter");
         return Vector3.subtract(this, other).length();
+    }
+    
+    distanceToSquared(other){
+        return Vector3.subtract(this, other).lengthSquared();
     }
 }
 
