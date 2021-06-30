@@ -1,6 +1,6 @@
 {
   "name": "@crowdedjs/math",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "vector-3.js",
   "scripts": {
@@ -17,5 +17,5 @@
     "url": "https://github.com/crowdedjs/math/issues"
   },
   "homepage": "https://github.com/crowdedjs/math#readme",
-  "type":"module"
+  "type": "module"
 }
